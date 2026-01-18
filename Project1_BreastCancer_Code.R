@@ -1,3 +1,6 @@
+# Breast cancer Analysis v1
+
+
 rm(list=ls())#clear all data from your curent Global Environment
 
 #Diagnosing breast cancer with the kNN algorithm
@@ -70,6 +73,7 @@ summary(wbcd[c("radius_mean", "area_mean", "smoothness_mean")])
 normalize <- function(x) {
   return ((x - min(x)) / (max(x) - min(x)))
 }
+
 
 #Apply the normalize() function to the numeric features
 #using lapply() function (and convert back to data frame)
